@@ -75,10 +75,6 @@
   font-family: inter-thin;
   src: url(../fonts/Inter-Thin.ttf);
 }
-@font-face {
-  font-family: inter-regular;
-  src: url(../fonts/inter-regular.ttf);
-}
 
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
@@ -4596,7 +4592,8 @@ img {
   }
 
   .home_bg_top {
-    opacity: 0.8;
+    opacity: 1;
+    display: flex;
     position: absolute;
     width: 100%;
     right: 0;
@@ -4605,11 +4602,12 @@ img {
   }
 
   .home_bg_bottom {
+    display: flex;
     position: absolute;
     width: 100%;
     left: 0;
     top: -1800px;
-    opacity: 0.8;
+    opacity: 1;
     z-index: 1;
   }
   
@@ -4789,6 +4787,8 @@ img {
   }
 
   .about_bg_top {
+    display: none;
+    opacity: .5;;
     position: absolute;
     width: 100%;
     right: 0;
@@ -4867,9 +4867,11 @@ img {
   }
 
   .what-you-will-learn-list .bg_blue_img {
+    display: flex;
     width: 100%;
     position: absolute;
     right: 0;
+    opacity: 1;
     top: -1500px;
     z-index: 1;
   }
@@ -5112,7 +5114,9 @@ img {
   }
   
   .testimonial_bg_img {
+    display: flex;
     position: absolute;
+    opacity: 1;
     width: 100%;
     left: 0;
     top: -2000px;
@@ -5235,6 +5239,8 @@ img {
   }
 
   .FAQ_bg_yellow_right {
+    display: none;
+    opacity: .5;
     position: absolute;
     width: 100%;
     right: 0;
@@ -5745,7 +5751,8 @@ img {
   }
 
   .home_bg_top {
-    opacity: 0.8;
+    display: flex;
+    opacity: 1;
     position: absolute;
     width: 100%;
     right: 0;
@@ -5754,11 +5761,12 @@ img {
   }
 
   .home_bg_bottom {
+    display: none;
     position: absolute;
     width: 100%;
     left: 0;
     top: -1800px;
-    opacity: 0.8;
+    opacity: 1;
     z-index: 1;
   }
   
@@ -5940,6 +5948,7 @@ img {
   }
 
   .about_bg_top {
+    display: none;
     position: absolute;
     width: 100%;
     right: 0;
@@ -6023,10 +6032,12 @@ img {
   }
 
   .what-you-will-learn-list .bg_blue_img {
+    display: flex;
     width: 100%;
     position: absolute;
     right: 0;
     top: -2000px;
+    opacity: 1;
     z-index: 1;
   }
 
@@ -6269,6 +6280,7 @@ img {
   }
   
   .testimonial_bg_img {
+    display: flex;
     position: absolute;
     width: 100%;
     left: 0;
@@ -6916,7 +6928,8 @@ img {
   }
 
   .home_bg_top {
-    opacity: 0.8;
+    display: flex;
+    opacity: 1;
     position: absolute;
     width: 100%;
     right: 0;
@@ -6925,6 +6938,7 @@ img {
   }
 
   .home_bg_bottom {
+    display: none;
     position: absolute;
     width: 100%;
     left: 0;
@@ -7112,6 +7126,7 @@ img {
 
   .about_bg_top {
     position: absolute;
+    display: none;
     width: 100%;
     right: 0;
     bottom: -2800px;
@@ -7199,6 +7214,8 @@ img {
   .what-you-will-learn-list .bg_blue_img {
     width: 100%;
     position: absolute;
+    display: flex;
+    opacity: 1;
     right: 0;
     top: -2000px;
     z-index: 1;
@@ -7452,8 +7469,10 @@ img {
   }
   
   .testimonial_bg_img {
+    display: flex;
     position: absolute;
     width: 100%;
+    opacity: 1;
     left: 0;
     top: -2000px;
     z-index: 1;
