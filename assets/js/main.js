@@ -192,10 +192,10 @@ const sr = ScrollReveal({
     // reset: true, // Animations repeat
 })
 
-sr.reveal(`.home__img, .about__data, .instructor_bg_img, .section-header, .swiper, .swiper-pagination-bullet, .swiper-button-next-unique img, .contact__img`)
-sr.reveal(`.home__data, .instructor__container, .instructor__img5, .title3, .contact__title, .contact__description`, {delay: 500})
-sr.reveal(`.about__img, .instructor__data, .faq-item`, {delay: 500, interval: 100})
-sr.reveal(`.what-you-will-learn-list, .show__buttons1, .contact__buttons, .scrollup_button`, {interval: 100})
+sr.reveal(`.home__title1, .home__title2, .home__img, .about__data, .instructor_bg_img, .section-header, .swiper, .contact__img`)
+sr.reveal(`.instructor__container, .instructor__img5, .title3, .contact__title, .contact__description`, {delay: 500})
+sr.reveal(`.about__img, .home__title2, .social-icons-home, .home__buttons_2, .instructor__data, .faq-item`, {delay: 500, interval: 100})
+sr.reveal(`.what-you-will-learn-list, .scrolldownbtn, .show__buttons1, .contact__buttons, .scrollup_button, .swiper-pagination`, {interval: 100})
 
 /*=============== SHOW HEADER & HIDE HEADER ===============*/
 let lastScrollTop = 0;
