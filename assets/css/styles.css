@@ -4639,7 +4639,7 @@ img {
 
   .home_bg_top {
     opacity: 1;
-    display: flex;
+    display: none;
     position: absolute;
     width: 100%;
     right: 0;
@@ -4648,7 +4648,7 @@ img {
   }
 
   .home_bg_bottom {
-    display: flex;
+    display: none;
     position: absolute;
     width: 100%;
     left: 0;
@@ -4913,7 +4913,7 @@ img {
   }
 
   .what-you-will-learn-list .bg_blue_img {
-    display: flex;
+    display: none;
     width: 100%;
     position: absolute;
     right: 0;
@@ -5160,7 +5160,7 @@ img {
   }
   
   .testimonial_bg_img {
-    display: flex;
+    display: none;
     position: absolute;
     opacity: 1;
     width: 100%;
@@ -5797,7 +5797,7 @@ img {
   }
 
   .home_bg_top {
-    display: flex;
+    display: none;
     opacity: 1;
     position: absolute;
     width: 100%;
@@ -6078,7 +6078,7 @@ img {
   }
 
   .what-you-will-learn-list .bg_blue_img {
-    display: flex;
+    display: none;
     width: 100%;
     position: absolute;
     right: 0;
@@ -6326,7 +6326,7 @@ img {
   }
   
   .testimonial_bg_img {
-    display: flex;
+    display: none;
     position: absolute;
     width: 100%;
     left: 0;
@@ -6974,7 +6974,7 @@ img {
   }
 
   .home_bg_top {
-    display: flex;
+    display: none;
     opacity: 1;
     position: absolute;
     width: 100%;
@@ -7260,7 +7260,7 @@ img {
   .what-you-will-learn-list .bg_blue_img {
     width: 100%;
     position: absolute;
-    display: flex;
+    display: none;
     opacity: 1;
     right: 0;
     top: -2000px;
@@ -7381,7 +7381,7 @@ img {
 
   /*=============== INSTRUCTOR ===============*/
   .instructor_bg_img {
-    width: 1367px;
+    width: 1366px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -7515,7 +7515,7 @@ img {
   }
   
   .testimonial_bg_img {
-    display: flex;
+    display: none;
     position: absolute;
     width: 100%;
     opacity: 1;
