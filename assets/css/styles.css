@@ -115,7 +115,7 @@ body, html {
   z-index: 1000; /* Ensure it's above all other elements */
 }
 
-.hidden_3 {
+.hidden-3 {
   display: none;
 }
 
@@ -127,6 +127,7 @@ body, html {
 /* Hide the loading screen once the page has loaded */
 body.loaded #loading-screen {
   opacity: 0;
+  pointer-events: none; /* Prevent interaction with the hidden loading screen */
 }
 
 body.loaded .hidden_3 {
