@@ -54,7 +54,7 @@ document.querySelectorAll('.scrolldownbtn a').forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault();
         const target = this.getAttribute('href');
-        smoothScroll(target, +200); // Adjust offset as needed
+        smoothScroll(target, +100); // Adjust offset as needed
     });
 });
 
@@ -188,14 +188,14 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 2500,
-    delay: 1500,
+    delay: 300,
     // reset: true, // Animations repeat
 })
 
 sr.reveal(`.home__title1, .home__title2, .home__img, .about__data, .instructor_bg_img, .section-header, .swiper, .contact__img`)
 sr.reveal(`.instructor__container, .instructor__img5, .title3, .contact__title, .contact__description`, {delay: 500})
 sr.reveal(`.about__img, .home__title2, .social-icons-home, .home__buttons_2, .instructor__data, .faq-item`, {delay: 500, interval: 100})
-sr.reveal(`.what-you-will-learn-box, .scrolldownbtn, .contact__buttons, .scrollup_button, .swiper-pagination`, {interval: 100})
+sr.reveal(`.what-you-will-learn-box, .image2, .scrolldownbtn, .contact__buttons, .scrollup_button, .swiper-pagination`, {interval: 100})
 
 /*=============== SHOW HEADER & HIDE HEADER ===============*/
 let lastScrollTop = 0;
@@ -278,6 +278,7 @@ window.addEventListener('load', function() {
                 setTimeout(() => {
                     document.getElementById('loading-screen').classList.add('hidden_3');
                     document.body.style.overflow = 'auto'; // Allow scrolling after loading
+                    initializeScrollReveal();
                 }, 1000); // Match this with the CSS transition duration
             }, remainingTime);
         } else {
@@ -285,6 +286,7 @@ window.addEventListener('load', function() {
             setTimeout(() => {
                 document.getElementById('loading-screen').classList.add('hidden_3');
                 document.body.style.overflow = 'auto'; // Allow scrolling after loading
+                initializeScrollReveal();
             }, 1000); // Match this with the CSS transition duration
         }
     };
