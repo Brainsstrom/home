@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -75,12 +76,8 @@
   src: url(../fonts/Inter-Thin.ttf);
 }
 @font-face {
-  font-family: delius-regular;
-  src: url(../fonts/Delius-Regular.ttf);
-}
-@font-face {
-  font-family: heiti-tc-medium;
-  src: url(../fonts/heiti-tc-medium.ttf);
+  font-family: inter-regular;
+  src: url(../fonts/inter-regular.ttf);
 }
 
 /*========== Responsive typography ==========*/
@@ -235,7 +232,7 @@ img {
   justify-content: center;
   flex-direction: row;
   font-size: 18px;
-  font-family: heiti-tc-medium;
+  font-family: inter-regular;
   gap: 8px;
   transition: color .4s;
   opacity: 0.5;
@@ -727,7 +724,7 @@ img {
   font-weight: 100;
   margin-left: 10px;
   letter-spacing: 2px;
-  font-family: delius-regular;
+  font-family: "Delius", cursive;
   color: #73768D; 
 }
 
@@ -1124,7 +1121,7 @@ img {
   justify-content: center;
   flex-direction: row;
   font-size: 14px;
-  font-family: heiti-tc-medium;
+  font-family: inter-regular;
   gap: 8px;
   transition: color .4s;
   opacity: 0.5;
@@ -1196,7 +1193,7 @@ img {
     justify-content: center;
     flex-direction: row;
     font-size: 14px;
-    font-family: heiti-tc-medium;
+    font-family: inter-regular;
     gap: 8px;
     transition: color .4s;
     opacity: 0.5;
@@ -2242,7 +2239,7 @@ img {
     justify-content: center;
     flex-direction: row;
     font-size: 14px;
-    font-family: heiti-tc-medium;
+    font-family: inter-regular;
     gap: 8px;
     transition: color .4s;
     opacity: 0.5;
@@ -2344,7 +2341,7 @@ img {
     justify-content: center;
     flex-direction: row;
     font-size: 18px;
-    font-family: heiti-tc-medium;
+    font-family: inter-regular;
     gap: 8px;
     transition: color .4s;
     opacity: 0.5;
@@ -3338,7 +3335,7 @@ img {
     justify-content: center;
     flex-direction: row;
     font-size: 18px;
-    font-family: heiti-tc-medium;
+    font-family: inter-regular;
     gap: 8px;
     transition: color .4s;
     opacity: 0.5;
@@ -3439,7 +3436,7 @@ img {
     justify-content: center;
     flex-direction: row;
     font-size: 18px;
-    font-family: heiti-tc-medium;
+    font-family: inter-regular;
     gap: 8px;
     transition: color .4s;
     opacity: 0.5;
@@ -4452,7 +4449,7 @@ img {
     justify-content: center;
     flex-direction: row;
     font-size: 18px;
-    font-family: heiti-tc-medium;
+    font-family: inter-regular;
     gap: 8px;
     transition: color .4s;
     opacity: 0.5;
@@ -5600,7 +5597,7 @@ img {
     justify-content: center;
     flex-direction: row;
     font-size: 22px;
-    font-family: heiti-tc-medium;
+    font-family: inter-regular;
     gap: 8px;
     transition: color .4s;
     opacity: 0.5;
@@ -6770,7 +6767,7 @@ img {
     justify-content: center;
     flex-direction: row;
     font-size: 22px;
-    font-family: heiti-tc-medium;
+    font-family: inter-regular;
     gap: 8px;
     transition: color .4s;
     opacity: 0.5;
@@ -7474,7 +7471,7 @@ img {
     font-weight: 100;
     margin-left: 10px;
     letter-spacing: 6px;
-    font-family: delius-regular;
+    font-family: "Delius", cursive;
     color: #73768D; 
   }
   
@@ -7956,7 +7953,7 @@ img {
     justify-content: center;
     flex-direction: row;
     font-size: 22px;
-    font-family: heiti-tc-medium;
+    font-family: inter-regular;
     gap: 8px;
     transition: color .4s;
     opacity: 0.5;
@@ -7968,7 +7965,7 @@ img {
   
   .footer__copy {
     display: block;
-    margin-top: 4rem;
+    margin-top: 3rem;
     text-align: center;
     font-size: 18px;
     font-family: inter-regular;
