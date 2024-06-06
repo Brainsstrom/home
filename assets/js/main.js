@@ -188,7 +188,7 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 2500,
-    delay: 300,
+    delay: 1500,
     // reset: true, // Animations repeat
 })
 
@@ -260,3 +260,45 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+/*=============== LOADING SCREEN ===============*/
+
+window.addEventListener('load', function() {
+    // Set a timeout to ensure the loading screen is displayed for at least 3.5 seconds
+    const loadingDuration = 3500; // 3.5 seconds in milliseconds
+    const start = new Date().getTime();
+
+    const hideLoadingScreen = () => {
+        const now = new Date().getTime();
+        const elapsed = now - start;
+        const remainingTime = loadingDuration - elapsed;
+
+        if (remainingTime > 0) {
+            setTimeout(() => {
+                document.body.classList.add('loaded');
+                setTimeout(() => {
+                    document.getElementById('loading-screen').classList.add('hidden_3');
+                    document.body.style.overflow = 'auto'; // Allow scrolling after loading
+                }, 1000); // Match this with the CSS transition duration
+            }, remainingTime);
+        } else {
+            document.body.classList.add('loaded');
+            setTimeout(() => {
+                document.getElementById('loading-screen').classList.add('hidden_3');
+                document.body.style.overflow = 'auto'; // Allow scrolling after loading
+            }, 1000); // Match this with the CSS transition duration
+        }
+    };
+
+    hideLoadingScreen();
+});
+
+// Load the Lottie animation
+document.addEventListener('DOMContentLoaded', function() {
+    lottie.loadAnimation({
+        container: document.getElementById('lottie-container'), // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        path: './assets/json/brainstrom.json' // the path to the animation json
+    });
+});
