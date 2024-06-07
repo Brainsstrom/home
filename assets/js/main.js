@@ -187,7 +187,7 @@ window.addEventListener('scroll', scrollActive);
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
-    duration: 2500,
+    duration: 500,
     delay: 300,
     // reset: true, // Animations repeat
 })
@@ -238,15 +238,27 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show the language buttons
         languageButtons.classList.remove('hidden_1');
     });
+    
+    // Add click event listener to the document
+    document.addEventListener('click', function(event) {
+        // Check if the click is outside the language buttons
+        if (!languageButtons.contains(event.target) && !registerButton.contains(event.target)) {
+            // Show the register button
+            registerButton.classList.remove('hidden_1');
+
+            // Hide the language buttons
+            languageButtons.classList.add('hidden_1');
+        }
+    });
 });
 
 
 document.addEventListener('DOMContentLoaded', () => {
     const contactButton = document.getElementById('contactButton');
-    const languageButtons = document.getElementById('languageButtons_1');
+    const languageButtons_1 = document.getElementById('languageButtons_1');
 
     // Initially hide the language buttons
-    languageButtons.classList.add('hidden_2');
+    languageButtons_1.classList.add('hidden_2');
 
     // Add click event listener to the contact button
     contactButton.addEventListener('click', function(event) {
@@ -256,7 +268,19 @@ document.addEventListener('DOMContentLoaded', () => {
         contactButton.classList.add('hidden_2');
 
         // Show the language buttons
-        languageButtons.classList.remove('hidden_2');
+        languageButtons_1.classList.remove('hidden_2');
+    });
+
+    // Add click event listener to the document
+    document.addEventListener('click', function(event) {
+        // Check if the click is outside the language buttons
+        if (!languageButtons_1.contains(event.target) && !contactButton.contains(event.target)) {
+            // Show the register button
+            contactButton.classList.remove('hidden_2');
+
+            // Hide the language buttons
+            languageButtons_1.classList.add('hidden_2');
+        }
     });
 });
 
