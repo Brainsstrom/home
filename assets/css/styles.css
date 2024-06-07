@@ -209,6 +209,7 @@ img {
   left: 0;
   background-color: transparent;
   z-index: var(--z-fixed);
+  transition: top 0.5s ease; /* Smooth transition */
 }
 
 .nav {
@@ -223,15 +224,14 @@ img {
 .nav__toggle,
 .nav__action {
   display: flex;
+  width: 19.19px;
   color: var(--title-color);
   cursor: pointer;
 }
 
-.nav__toggle {
-  margin-right: 10px;
-  width: 19.19px;
-  height: 19.19px;
-}
+  .nav__toggle {
+    margin-right: 10px;
+  }
 
 .nav__close {
   position: absolute;
@@ -274,7 +274,7 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  font-size: 18px;
+  font-size: 14px;
   font-family: inter-regular;
   gap: 8px;
   transition: color .4s;
@@ -378,12 +378,11 @@ img {
 }
 
 .home_bg_bottom {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: -500px;
-  z-index: 1;
-}
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+  }
 
 .home__img {
   width: 100%;
@@ -408,6 +407,7 @@ img {
   margin-right: auto;
   z-index: 3; /* Ensure button is above the background images */
 }
+
 .home__title2 {
   width: 350px;
   height: auto;
@@ -417,13 +417,22 @@ img {
   z-index: 3; /* Ensure button is above the background images */
 }
 
-.home__buttons {
+.home__buttons_2 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   row-gap: .5rem;
   z-index: 3; /* Ensure button is above the background images */
+}
+
+.home__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2rem;
+  z-index: 3; /* Ensure buttons are above the background images */
 }
 
 .social-icons-home {
@@ -454,7 +463,53 @@ img {
   opacity: 1;
 }
 
+.hidden_1 {
+  display: none;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+#orText {
+  font-size: 17px;
+  font-family: inter-regular;
+}
+
 /*=============== BUTTON ===============*/
+
+#languageButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0px;
+ }
+
+ #tamilButton {
+  width: 136.15px; /* Specify the width */
+  height: 65.73px;
+  background-image: url(../img/svg/tamil_btn.svg);
+  background-size: cover;
+  z-index: 3;
+  position: relative;
+ }
+
+ #englishButton {
+  width: 136.15px; /* Specify the width */
+  height: 65.73px;
+  background-image: url(../img/svg/english_btn.svg);
+  background-size: cover;
+  z-index: 3;
+  position: relative;
+ }
+
+ #tamilButton:hover {
+  background-image: url(../img/svg/tamil_btn_hover.svg);
+ }
+
+ #englishButton:hover {
+  background-image: url(../img/svg/english_btn_hover.svg);
+ }
 
 .button {
   width: 136.15px; /* Specify the width */
@@ -493,7 +548,7 @@ img {
 }
 
 .about__description {
-  font-size: 18px;
+  font-size: 16px;
   text-align: start;
   letter-spacing: 18%;
   line-height: 26px;
@@ -503,9 +558,9 @@ img {
 }
 
 .section__title {
-  font-size: 24px;
+  font-size: 16px;
   letter-spacing: .2px;
-  line-height: 40px;
+  line-height: 25px;
   font-family: inter-regular;
   font-weight: var(--font-bold);
   text-align: start;
@@ -525,10 +580,15 @@ img {
 }
 
 .what-you-will-learn-list .question_img {
-  width: 300px;
+  width: 433.39px;
+  height: 680px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-inline-end: -160px;
+  background-image: url(../img/svg/question_img_2.svg);
   position: absolute;
   right: 0px;
-  top: -100px;
+  top: -8px;
   z-index: 1;
 }
 
@@ -541,7 +601,7 @@ img {
 }
 
 .what-you-will-learn-list .image2 {
-  width: 350px;
+  width: 250px;
   margin-left: 20px;
   z-index: 1;
   margin-bottom: 50px;
@@ -552,20 +612,20 @@ img {
   width: 100%;
   align-items: start;
   margin-left: 24px;
-  flex-direction: row;
+  flex-direction: column;
   gap: 12px;
   z-index: 2;
 }
 
 .what-you-will-learn-box .what-you-will-learn-box-left {
   flex: none;
-  display: flex;
-  align-items: center;
-  width: 80px;
-  justify-content: center;
-  gap: 10px;
-  overflow: hidden;
-  position: relative;
+    display: flex;
+    align-items: center;
+    width: 68.21px;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+    position: relative;
 }
 
 .what-you-will-learn-box .what-you-will-learn-box-left .icon {
@@ -576,6 +636,7 @@ img {
 .what-you-will-learn-box .content1 {
   display: flex;
   flex-direction: column;
+  margin-right: 40px;
 }
 
 .what-you-will-learn-box .content1 h4 {
@@ -583,7 +644,7 @@ img {
   font-size: 18px;
   line-height: 35px;
   letter-spacing: .2px;
-  width: 350px;
+  width: 250px;
   text-align: start;
   text-transform: uppercase;
   margin: 0;
@@ -594,7 +655,6 @@ img {
   font-size: 16px;
   letter-spacing: .2px;
   line-height: 20px;
-  width: 400px;
   text-align: start;
   margin: 0;
   font-family: inter-regular;
@@ -648,8 +708,7 @@ img {
 /*=============== INSTRUCTOR ===============*/
 .instructor_bg_img {
   position: relative;
-  padding-left: 80px;
-  margin-left: auto;
+  padding-left: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -661,7 +720,7 @@ img {
   margin-right: 30px;
   margin-top: 20px;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px 1px;
+  gap: 10px 1px;
 }
 
 .instructor__card {
@@ -670,14 +729,16 @@ img {
 }
 
 .instructor__card_big {
-  position: relative;
-  height: 90px;
+  display: none;
 }
 
 .instructor__img1 {
   position: absolute;
   height: 80px;
   bottom: 0px;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
   transition: transform .4s;
 }
 
@@ -714,14 +775,28 @@ img {
 }
 
 .instructor__img5 {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  height: 120px;
+  background-image: url(../img/svg/instructor_title5_ph.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: 50%;
+  height: 60px;
+  background-size: contain;
+  margin-top: 20px;
   margin-bottom: 20px;
-  margin-top: 50px;
+  transition: transform .4s;
+}
+
+.instructor__container_1 {
+  display: none;
+}
+
+.instructor__img6 {
+  position: absolute;
+  height: 100px;
+  text-align: center;
+  right: 0;
+  left: 0;
+  margin-left: auto;
   margin-right: auto;
   transition: transform .4s;
 }
@@ -753,17 +828,19 @@ img {
   position: absolute;
   width: 100%;
   left: 0;
-  top: -800px;
+  top: -300px;
   z-index: 1;
 }
 
 .section-header {
   text-align: start;
   margin-bottom: 20px;
+  position: relative; /* Ensure header is above background image */
+  z-index: 2;
 }
 
 .section-header .title {
-  font-size: 60px;
+  font-size: 46px;
   font-weight: 100;
   margin-left: 10px;
   letter-spacing: 2px;
@@ -775,11 +852,14 @@ img {
 .testimonials {
   position: relative;
   padding: 0px 0px;
+  z-index: 2;
 }
 
 .testimonials-item {
   padding: 10px;
   border-radius: 30px;
+  position: relative; /* Ensure header is above background image */
+  z-index: 3;
 }
 
 .testimonials-item .info {
@@ -797,13 +877,14 @@ img {
 .testimonials-item .name {
   font-size: 40px;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   font-family: inter-extra-light;
 }
 
 .testimonials-item p {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 25px;
   letter-spacing: .3px;
   font-family: inter-regular;
   color: #73768D;
@@ -812,6 +893,7 @@ img {
 .testimonials-item .rating {
   margin: 0;
   font-size: 15px;
+  letter-spacing: 1px;
   color: #C79B0E;
 }
 
@@ -833,6 +915,7 @@ img {
   top: 70%;
   transform: translateY(-50%);
   cursor: pointer;
+  z-index: 3; /* Ensure navigation buttons are above background image */
 }
 
 .swiper-button-prev-unique {
@@ -902,7 +985,7 @@ img {
   color: #fff;
   background-color: rgba(217, 217, 217, 0.12) ;
   padding: 12px 12px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
   line-height: 20px;
   border: none;
@@ -952,7 +1035,7 @@ img {
   width: 100%;
   color: #fff;
   padding: 12px 12px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
   line-height: 20px;
   border: none;
@@ -1040,12 +1123,14 @@ img {
 }
 
 .contact__img {
-  position: absolute;
+  position: relative;
+  margin-inline-end: -25px;
   width: 93%;
   right: 0;
   border-top-left-radius: 49px;
   border-bottom-left-radius: 49px;
   border-bottom-right-radius: 9px;
+  margin-left: auto;
   z-index: 3; /* Ensure the contact image is above the FAQ section */
   
 }
@@ -1060,9 +1145,9 @@ img {
 }
 
 .contact__title {
-  font-size: 40px;
+  font-size: 32px;
   font-family: inter-regular;
-  margin-top: 580px;
+  margin-top: 20px;
   margin-bottom: .5rem;
   background-image: linear-gradient(80deg, #007BFF, #FFEB3B);
   -webkit-background-clip: text;
@@ -1072,8 +1157,9 @@ img {
 }
 
 .contact__description {
-  font-size: 20px;
+  font-size: 16px;
   font-family: inter-regular;
+  line-height: 25px;
   z-index: 3; /* Ensure the contact image is above the FAQ section */
   position: relative;
 }
@@ -1094,6 +1180,52 @@ img {
   z-index: 3; /* Ensure the contact image is above the FAQ section */
   position: relative;
 }
+
+.hidden_2 {
+  display: none;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+#orText_1 {
+  font-size: 17px;
+  font-family: inter-regular;
+}
+
+#languageButtons_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0px;
+ }
+
+ #tamilButton_1 {
+  width: 120px; /* Specify the width */
+  height: 58px;
+  background-image: url(../img/svg/tamil_btn.svg);
+  background-size: cover;
+  z-index: 3;
+  position: relative;
+ }
+
+ #englishButton_1 {
+  width: 120px; /* Specify the width */
+  height: 58px;
+  background-image: url(../img/svg/english_btn.svg);
+  background-size: cover;
+  z-index: 3;
+  position: relative;
+ }
+
+ #tamilButton_1:hover {
+  background-image: url(../img/svg/tamil_btn_hover.svg);
+ }
+
+ #englishButton_1:hover {
+  background-image: url(../img/svg/english_btn_hover.svg);
+ }
 
 .button_2 {
   width: 120px; /* Specify the width */
@@ -1194,27 +1326,6 @@ img {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(228, 4%, 35%);
-}
-
-/*=============== SCROLL UP ===============*/
-
-.scrollup_button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 0px;
-  transition: bottom .4s, transform .4s;
-}
-
-.button_3 {
-  width: 204.06px; /* Specify the width */
-  height: 61.02px;
-  background-image: url(../img/svg/go-to-top-btn.svg);  
-  background-size: cover;
-}
-
-.button_3:hover {
-  background-image: url(../img/svg/go-to-top-btn-hover.svg);  
 }
 
 /* Show Scroll Up */
@@ -1710,10 +1821,10 @@ img {
 
   /*=============== INSTRUCTOR ===============*/
   .instructor_bg_img {
-    width: 290px;
     position: relative;
-    margin-left: auto;
-    margin-top: 10px;
+  padding-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   }
 
   .instructor__container {
@@ -1842,7 +1953,7 @@ img {
   font-weight: 100;
   margin-left: 10px;
   letter-spacing: 2px;
-  font-family: delius-regular;
+  font-family: "Delius", cursive;
   color: #73768D; 
 }
 
@@ -1875,13 +1986,14 @@ img {
   .testimonials-item .name {
     font-size: 35px;
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-family: inter-extra-light;
   }
 
   .testimonials-item p {
     margin-top: 20px;
     font-size: 16px;
+    line-height: 25px;
     letter-spacing: .3px;
     font-family: inter-regular;
     color: #73768D;
@@ -1890,6 +2002,7 @@ img {
   .testimonials-item .rating {
     margin: 0;
     font-size: 15px;
+    letter-spacing: 1px;
     color: #C79B0E;
   }
 
@@ -2150,6 +2263,7 @@ img {
   .contact__description {
     font-size: 14px;
     font-family: inter-regular;
+    line-height: 25px;
     z-index: 3; /* Ensure the contact image is above the FAQ section */
     position: relative;
   }
@@ -2240,8 +2354,8 @@ img {
   }
   
   .button_3 {
-    width: 140px; /* Specify the width */
-    height: 42px;
+    width: 130px; /* Specify the width */
+    height: 39px;
     background-image: url(../img/svg/go-to-top-btn.svg);  
     background-size: cover;
   }
@@ -2937,7 +3051,7 @@ img {
     font-weight: 100;
     margin-left: 10px;
     letter-spacing: 2px;
-    font-family: delius-regular;
+    font-family: "Delius", cursive;
     color: #73768D; 
   }
   
@@ -4043,7 +4157,7 @@ img {
     font-weight: 100;
     margin-left: 10px;
     letter-spacing: 2px;
-    font-family: delius-regular;
+    font-family: "Delius", cursive;
     color: #73768D; 
   }
   
@@ -5191,7 +5305,7 @@ img {
     font-weight: 100;
     margin-left: 10px;
     letter-spacing: 2px;
-    font-family: delius-regular;
+    font-family: "Delius", cursive;
     color: #73768D; 
   }
   
@@ -6365,7 +6479,7 @@ img {
     font-weight: 100;
     margin-left: 10px;
     letter-spacing: 6px;
-    font-family: delius-regular;
+    font-family: "Delius", cursive;
     color: #73768D; 
   }
   
@@ -6532,7 +6646,7 @@ img {
   .faq-item .faq-question .faq-toggle-icon {
     font-size: 50px;
     font-weight: 100;
-    font-family: delius-regular;
+    font-family: "Delius", cursive;
     margin-right: 10px;
     margin-left: 10px;
     width: 30px;
@@ -6585,7 +6699,7 @@ img {
   .hidden-content1 .faq-question .faq-toggle-icon {
     font-size: 50px;
     font-weight: 100;
-    font-family: delius-regular;
+    font-family: "Delius", cursive;
     margin-right: 10px;
     margin-left: 10px;
     width: 30px;
@@ -7731,7 +7845,7 @@ img {
   .faq-item .faq-question .faq-toggle-icon {
     font-size: 50px;
     font-weight: 100;
-    font-family: delius-regular;
+    font-family: "Delius", cursive;
     margin-right: 10px;
     margin-left: 10px;
     width: 30px;
@@ -7784,7 +7898,7 @@ img {
   .hidden-content1 .faq-question .faq-toggle-icon {
     font-size: 50px;
     font-weight: 100;
-    font-family: delius-regular;
+    font-family: "Delius", cursive;
     margin-right: 10px;
     margin-left: 10px;
     width: 30px;
