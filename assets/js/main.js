@@ -91,15 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
         showMoreButton.parentElement.style.display = 'flex';
         showLessContainer.style.display = 'none';
 
-        // Scroll to the "Show More" button position
-        const scrollToPosition = whatYouWillLearnSection.getBoundingClientRect().top + window.pageYOffset + 50; // Adjust offset as needed
-        console.log('What You Will Learn Section Position:', scrollToPosition);
-
-        window.scrollTo({
-            top: scrollToPosition,
-            behavior: 'smooth'
-        });
-
     });
 });
 
