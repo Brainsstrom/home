@@ -1098,10 +1098,11 @@ img {
 
 .contact__buttons {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   column-gap: .5rem;
   z-index: 3; /* Ensure the contact image is above the FAQ section */
   position: relative;
+  align-items: center;
 }
 
 .price2 {
@@ -2138,10 +2139,11 @@ img {
   
   .contact__buttons {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     column-gap: .5rem;
     z-index: 3; /* Ensure the contact image is above the FAQ section */
     position: relative;
+    align-items: center;
   }
   
   .price2 {
@@ -3165,10 +3167,11 @@ img {
   
   .contact__buttons {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     column-gap: .5rem;
     z-index: 3; /* Ensure the contact image is above the FAQ section */
     position: relative;
+    align-items: center;
   }
   
   .price2 {
@@ -4219,6 +4222,7 @@ img {
     column-gap: .5rem;
     z-index: 3; /* Ensure the contact image is above the FAQ section */
     position: relative;
+    align-items: center;
   }
   
   .price2 {
