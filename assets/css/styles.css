@@ -5115,7 +5115,7 @@ img {
 
   .sliding-image-desktop {
     display: flex;
-    height: 90%; /* Adjust as needed */
+    width: 90%; /* Adjust as needed */
     max-height: 80%; /* Adjust as needed */
   }
 
@@ -6350,7 +6350,7 @@ img {
 
   .sliding-image-desktop {
     display: flex;
-    height: 90%; /* Adjust as needed */
+    width: 90%; /* Adjust as needed */
     max-height: 80%; /* Adjust as needed */
   }
 
