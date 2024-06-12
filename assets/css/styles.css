@@ -522,6 +522,7 @@ img {
   background-clip: text;
   color: transparent;
   display: flex;
+  cursor: pointer;
   gap: 6px;
 }
 
@@ -1668,6 +1669,7 @@ img {
     background-clip: text;
     color: transparent;
     display: flex;
+    cursor: pointer;
     gap: 6px;
   }
 
@@ -2789,6 +2791,7 @@ img {
     background-clip: text;
     color: transparent;
     display: flex;
+    cursor: pointer;
     gap: 6px;
   }
 
@@ -3914,6 +3917,7 @@ img {
     background-clip: text;
     color: transparent;
     display: flex;
+    cursor: pointer;
     gap: 6px;
   }
 
@@ -5091,6 +5095,7 @@ img {
     background-clip: text;
     color: transparent;
     display: flex;
+    cursor: pointer;
     gap: 6px;
   }
 
@@ -6325,6 +6330,7 @@ img {
     background-clip: text;
     color: transparent;
     display: flex;
+    cursor: pointer;
     gap: 6px;
   }
 
@@ -7552,6 +7558,7 @@ img {
     background-clip: text;
     color: transparent;
     display: flex;
+    cursor: pointer;
     gap: 6px;
   }
 
