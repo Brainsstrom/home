@@ -319,3 +319,29 @@ document.addEventListener('DOMContentLoaded', function() {
         path: './assets/json/brainstrom.json' // the path to the animation json
     });
 });
+
+// Load the Giftbox Lottie animation
+document.addEventListener("DOMContentLoaded", function() {
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('lottie'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './assets/json/giftbox.json' // Replace with the path to your Lottie animation JSON file
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const viewKit = document.querySelector('.viewkit');
+    const slidingImageContainer = document.getElementById('slidingImageContainer');
+    const closeButton = document.getElementById('closeButton');
+
+    viewKit.addEventListener('click', function() {
+        slidingImageContainer.classList.add('visible');
+    });
+
+    closeButton.addEventListener('click', function() {
+        slidingImageContainer.classList.remove('visible');
+    });
+});
