@@ -409,7 +409,18 @@ img {
   z-index: 3; /* Ensure button is above the background images */
 }
 
-.home__title2 {
+.home__title2_desktop {
+  display: none;
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  z-index: 3; /* Ensure button is above the background images */
+}
+
+.home__title2_ph {
+  display: flex;
   width: 350px;
   height: auto;
   margin-left: auto;
@@ -476,14 +487,97 @@ img {
   font-family: inter-regular;
 }
 
+.animation-text-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center; /* Align items to the left */
+  margin-top: 0px; /* Add some spacing from the buttons */
+}
+
+#lottie {
+  width: 100px;
+  height: 100px;
+  margin-right: 2px; /* Space between the animation and text */
+}
+
+.text-content {
+  font-size: 18px;
+  margin-top: auto;
+  margin-bottom: 0px;
+  color: white;
+  font-family: inter-medium;
+  text-align: left; /* Ensure text is aligned to the left */
+}
+
+.text-content p {
+  margin: 0; /* Remove default margin from the paragraph */
+}
+
+.viewkit {
+  background: linear-gradient(180deg, #007BFF, #FFEB3B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: flex;
+  gap: 6px;
+}
+
+.sliding-image-container {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top 0.5s ease;
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+.sliding-image-desktop {
+  display: none;
+  width: 90%; /* Adjust as needed */
+  max-width: 80%; /* Adjust as needed */
+}
+
+.sliding-image-ph {
+  display: flex;
+  height: 90%; /* Adjust as needed */
+  max-height: 80%; /* Adjust as needed */
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.sliding-image-container.visible {
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
 /*=============== BUTTON ===============*/
 
 #languageButtons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 10px;
   margin-top: 0px;
+  margin-bottom: 10px;
  }
 
  #tamilButton {
@@ -1459,7 +1553,19 @@ img {
     z-index: 3; /* Ensure title is above the background images */
   }
 
-  .home__title2 {
+  .home__title2_desktop {
+    display: none;
+    width: 260px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3; /* Ensure button is above the background images */
+  }
+
+  .home__title2_ph {
+    display: flex;
     width: 260px;
     height: auto;
     margin-top: auto;
@@ -1492,7 +1598,7 @@ img {
   }
   
   .price1 {
-    font-size: 18px;
+    font-size: 12px;
     letter-spacing: 2.5px;
     font-family: inter-bold;
     color: #FFD761;
@@ -1527,19 +1633,102 @@ img {
     font-family: inter-regular;
   }
 
+  .animation-text-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; /* Align items to the left */
+    margin-top: 0px; /* Add some spacing from the buttons */
+  }
+
+  #lottie {
+    width: 60px;
+    height: 60px;
+    margin-right: 2px; /* Space between the animation and text */
+  }
+
+  .text-content {
+    font-size: 12px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    color: white;
+    font-family: inter-medium;
+    text-align: left; /* Ensure text is aligned to the left */
+  }
+
+  .text-content p {
+    margin: 0; /* Remove default margin from the paragraph */
+  }
+
+  .viewkit {
+    background: linear-gradient(180deg, #007BFF, #FFEB3B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    gap: 6px;
+  }
+
+  .sliding-image-container {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s ease;
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+
+  .sliding-image-desktop {
+    display: none;
+    width: 90%; /* Adjust as needed */
+    max-width: 80%; /* Adjust as needed */
+  }
+
+  .sliding-image-ph {
+    display: flex;
+    height: 90%; /* Adjust as needed */
+    max-height: 80%; /* Adjust as needed */
+  }
+
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .sliding-image-container.visible {
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
   /*=============== BUTTON ===============*/
 
   #languageButtons {
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    align-items: center;
    gap: 10px;
    margin-top: 0px;
+   margin-bottom: 10px;
   }
 
   #tamilButton {
-   width: 136.15px; /* Specify the width */
-   height: 65.73px;
+   width: 125px; /* Specify the width */
+   height: 60px;
    background-image: url(../img/svg/tamil_btn.svg);
    background-size: cover;
    z-index: 3;
@@ -1547,8 +1736,8 @@ img {
   }
 
   #englishButton {
-   width: 136.15px; /* Specify the width */
-   height: 65.73px;
+   width: 125px; /* Specify the width */
+   height: 60px;
    background-image: url(../img/svg/english_btn.svg);
    background-size: cover;
    z-index: 3;
@@ -1564,8 +1753,8 @@ img {
   }
   
   .button {
-    width: 136.15px; /* Specify the width */
-    height: 65.73px;
+    width: 125px; /* Specify the width */
+    height: 60px;
     background-image: url(../img/svg/reg_button.svg);  
     background-size: cover;
     z-index: 3; /* Ensure button is above the background images */
@@ -2485,7 +2674,19 @@ img {
     z-index: 3; /* Ensure button is above the background images */
   }
 
-  .home__title2 {
+  .home__title2_desktop {
+    display: none;
+    width: 350px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3; /* Ensure button is above the background images */
+  }
+
+  .home__title2_ph {
+    display: flex;
     width: 350px;
     height: auto;
     margin-top: auto;
@@ -2553,14 +2754,97 @@ img {
     font-family: inter-regular;
   }
 
+  .animation-text-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; /* Align items to the left */
+    margin-top: 0px; /* Add some spacing from the buttons */
+  }
+
+  #lottie {
+    width: 100px;
+    height: 100px;
+    margin-right: 2px; /* Space between the animation and text */
+  }
+
+  .text-content {
+    font-size: 18px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    color: white;
+    font-family: inter-medium;
+    text-align: left; /* Ensure text is aligned to the left */
+  }
+
+  .text-content p {
+    margin: 0; /* Remove default margin from the paragraph */
+  }
+
+  .viewkit {
+    background: linear-gradient(180deg, #007BFF, #FFEB3B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    gap: 6px;
+  }
+
+  .sliding-image-container {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s ease;
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+
+  .sliding-image-desktop {
+    display: none;
+    width: 90%; /* Adjust as needed */
+    max-width: 80%; /* Adjust as needed */
+  }
+
+  .sliding-image-ph {
+    display: flex;
+    height: 90%; /* Adjust as needed */
+    max-height: 80%; /* Adjust as needed */
+  }
+
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .sliding-image-container.visible {
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
   /*=============== BUTTON ===============*/
 
   #languageButtons {
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    align-items: center;
    gap: 10px;
    margin-top: 0px;
+   margin-bottom: 10px;
   }
 
   #tamilButton {
@@ -3514,7 +3798,19 @@ img {
     z-index: 3; /* Ensure button is above the background images */
   }
 
-  .home__title2 {
+  .home__title2_desktop {
+    display: none;
+    width: 350px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3; /* Ensure button is above the background images */
+  }
+
+  .home__title2_ph {
+    display: flex;
     width: 350px;
     height: auto;
     margin-top: auto;
@@ -3583,14 +3879,97 @@ img {
     font-family: inter-regular;
   }
 
+  .animation-text-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; /* Align items to the left */
+    margin-top: 0px; /* Add some spacing from the buttons */
+  }
+
+  #lottie {
+    width: 100px;
+    height: 100px;
+    margin-right: 2px; /* Space between the animation and text */
+  }
+
+  .text-content {
+    font-size: 18px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    color: white;
+    font-family: inter-medium;
+    text-align: left; /* Ensure text is aligned to the left */
+  }
+
+  .text-content p {
+    margin: 0; /* Remove default margin from the paragraph */
+  }
+
+  .viewkit {
+    background: linear-gradient(180deg, #007BFF, #FFEB3B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    gap: 6px;
+  }
+
+  .sliding-image-container {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s ease;
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+
+  .sliding-image-desktop {
+    display: none;
+    width: 90%; /* Adjust as needed */
+    max-width: 80%; /* Adjust as needed */
+  }
+
+  .sliding-image-ph {
+    display: flex;
+    height: 90%; /* Adjust as needed */
+    max-height: 80%; /* Adjust as needed */
+  }
+
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .sliding-image-container.visible {
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
   /*=============== BUTTON ===============*/
 
   #languageButtons {
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    align-items: center;
    gap: 10px;
    margin-top: 0px;
+   margin-bottom: 10px;
   }
 
   #tamilButton {
@@ -4568,7 +4947,7 @@ img {
     display: flex;
     position: relative;
     flex-direction: column;
-    gap: 2rem;
+    gap: 0rem;
     z-index: 3; /* Ensure button is above the background images */
   }
   
@@ -4580,13 +4959,26 @@ img {
     right: 0;
     left: 0;
     height: auto;
+    margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
     z-index: 3; /* Ensure button is above the background images */
   }
 
-  .home__title2 {
+  .home__title2_desktop {
     display: flex;
+    position: relative;
+    width: 300px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3; /* Ensure button is above the background images */
+  }
+
+  .home__title2_ph {
+    display: none;
     position: relative;
     width: 300px;
     height: auto;
@@ -4604,7 +4996,7 @@ img {
     flex-direction: row;
     gap: 20px;
     margin-right: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     z-index: 3; /* Ensure button is above the background images */
   }
 
@@ -4622,11 +5014,11 @@ img {
   }
   
   .price1 {
+    display: none;
     font-size: 18px;
     letter-spacing: 2.5px;
     font-family: inter-bold;
     color: #FFD761;
-    display: flex;
     flex-direction: column;
   }
   
@@ -4664,6 +5056,88 @@ img {
     font-family: inter-regular;
   }
 
+  .animation-text-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 60px;
+    justify-content: flex-end; /* Align items to the left */
+    margin-top: 0px; /* Add some spacing from the buttons */
+  }
+
+  #lottie {
+    width: 125px;
+    height: 125px;
+    margin-right: 2px; /* Space between the animation and text */
+  }
+
+  .text-content {
+    font-size: 18px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    color: white;
+    font-family: inter-medium;
+    text-align: left; /* Ensure text is aligned to the left */
+  }
+
+  .text-content p {
+    margin: 0; /* Remove default margin from the paragraph */
+  }
+
+  .viewkit {
+    background: linear-gradient(180deg, #007BFF, #FFEB3B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    gap: 6px;
+  }
+
+  .sliding-image-container {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s ease;
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+
+  .sliding-image-desktop {
+    display: flex;
+    width: 90%; /* Adjust as needed */
+    max-width: 80%; /* Adjust as needed */
+  }
+
+  .sliding-image-ph {
+    display: none;
+    width: 90%; /* Adjust as needed */
+    max-width: 80%; /* Adjust as needed */
+  }
+
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .sliding-image-container.visible {
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
    /*=============== BUTTON ===============*/
 
    #languageButtons {
@@ -4672,6 +5146,7 @@ img {
     align-items: center;
     gap: 10px;
     margin-top: 0px;
+    margin-bottom: 0px;
    }
 
    #tamilButton {
@@ -5692,7 +6167,7 @@ img {
     display: flex;
     position: relative;
     flex-direction: column;
-    gap: 2rem;
+    gap: 0rem;
     z-index: 3; /* Ensure button is above the background images */
   }
   
@@ -5703,14 +6178,27 @@ img {
     top: 0;
     right: 0;
     left: 0;
+    margin-bottom: 2rem;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     z-index: 3; /* Ensure button is above the background images */
   }
 
-  .home__title2 {
+  .home__title2_desktop {
     display: flex;
+    position: relative;
+    width: 350px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3; /* Ensure button is above the background images */
+  }
+
+  .home__title2_ph {
+    display: none;
     position: relative;
     width: 350px;
     height: auto;
@@ -5728,7 +6216,7 @@ img {
     flex-direction: row;
     gap: 20px;
     margin-right: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     z-index: 3; /* Ensure button is above the background images */
   }
 
@@ -5748,6 +6236,7 @@ img {
     flex-direction: column;
     bottom: 0px;
     left: 20px;
+    z-index: 4;
   }
 
   .social-icons-home li a {
@@ -5759,11 +6248,11 @@ img {
   }
   
   .price1 {
+    display: none;
     font-size: 18px;
     letter-spacing: 2.5px;
     font-family: inter-bold;
     color: #FFD761;
-    display: flex;
     flex-direction: column;
   }
   
@@ -5801,6 +6290,88 @@ img {
     font-family: inter-regular;
   }
 
+  .animation-text-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 60px;
+    justify-content: flex-end; /* Align items to the left */
+    margin-top: 0px; /* Add some spacing from the buttons */
+  }
+
+  #lottie {
+    width: 125px;
+    height: 125px;
+    margin-right: 2px; /* Space between the animation and text */
+  }
+
+  .text-content {
+    font-size: 22px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    color: white;
+    font-family: inter-medium;
+    text-align: left; /* Ensure text is aligned to the left */
+  }
+
+  .text-content p {
+    margin: 0; /* Remove default margin from the paragraph */
+  }
+
+  .viewkit {
+    background: linear-gradient(180deg, #007BFF, #FFEB3B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    gap: 6px;
+  }
+
+  .sliding-image-container {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s ease;
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+
+  .sliding-image-desktop {
+    display: flex;
+    width: 90%; /* Adjust as needed */
+    max-width: 80%; /* Adjust as needed */
+  }
+
+  .sliding-image-ph {
+    display: none;
+    width: 90%; /* Adjust as needed */
+    max-width: 80%; /* Adjust as needed */
+  }
+
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .sliding-image-container.visible {
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
    /*=============== BUTTON ===============*/
 
    #languageButtons {
@@ -5809,6 +6380,7 @@ img {
     align-items: center;
     gap: 10px;
     margin-top: 0px;
+    margin-bottom: 0px;
    }
 
    #tamilButton {
@@ -6831,7 +7403,7 @@ img {
     display: flex;
     position: relative;
     flex-direction: column;
-    gap: 2rem;
+    gap: 0rem;
     z-index: 3; /* Ensure button is above the background images */
   }
   
@@ -6843,13 +7415,26 @@ img {
     right: 0;
     left: 0;
     height: auto;
+    margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
     z-index: 3; /* Ensure button is above the background images */
   }
 
-  .home__title2 {
+  .home__title2_desktop {
     display: flex;
+    position: relative;
+    width: 350px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3; /* Ensure button is above the background images */
+  }
+
+  .home__title2_ph {
+    display: none;
     position: relative;
     width: 350px;
     height: auto;
@@ -6867,7 +7452,7 @@ img {
     flex-direction: row;
     gap: 20px;
     margin-right: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     z-index: 3; /* Ensure button is above the background images */
   }
 
@@ -6887,6 +7472,7 @@ img {
     flex-direction: column;
     bottom: 100px;
     left: 100px;
+    z-index: 4;
   }
 
   .social-icons-home li a {
@@ -6895,15 +7481,6 @@ img {
   
   .social-icons-home li a:hover {
     opacity: 1;
-  }
-  
-  .price1 {
-    font-size: 18px;
-    letter-spacing: 2.5px;
-    font-family: inter-bold;
-    color: #FFD761;
-    display: flex;
-    flex-direction: column;
   }
   
   .scrolldownbtn {
@@ -6940,6 +7517,92 @@ img {
     font-family: inter-regular;
   }
 
+  .animation-text-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 60px;
+    justify-content: flex-end; /* Align items to the left */
+    margin-top: 0px; /* Add some spacing from the buttons */
+  }
+
+  #lottie {
+    width: 125px;
+    height: 125px;
+    margin-right: 2px; /* Space between the animation and text */
+  }
+
+  .text-content {
+    font-size: 22px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    color: white;
+    font-family: inter-medium;
+    text-align: left; /* Ensure text is aligned to the left */
+  }
+
+  .text-content p {
+    margin: 0; /* Remove default margin from the paragraph */
+  }
+
+  .viewkit {
+    background: linear-gradient(180deg, #007BFF, #FFEB3B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    gap: 6px;
+  }
+
+  .sliding-image-container {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s ease;
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+
+  .sliding-image-desktop {
+    display: flex;
+    width: 90%; /* Adjust as needed */
+    max-width: 80%; /* Adjust as needed */
+  }
+
+  .sliding-image-ph {
+    display: none;
+    width: 90%; /* Adjust as needed */
+    max-width: 80%; /* Adjust as needed */
+  }
+
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .sliding-image-container.visible {
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .price1 {
+    display: none;
+  }
+
    /*=============== BUTTON ===============*/
 
    #languageButtons {
@@ -6948,6 +7611,7 @@ img {
     align-items: center;
     gap: 10px;
     margin-top: 0px;
+    margin-bottom: 0px;
    }
 
    #tamilButton {
