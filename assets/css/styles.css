@@ -497,13 +497,13 @@ img {
 }
 
 #lottie {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   margin-right: 2px; /* Space between the animation and text */
 }
 
 .text-content {
-  font-size: 12px;
+  font-size: 18px;
   margin-top: auto;
   margin-bottom: 0px;
   color: white;
@@ -541,8 +541,8 @@ img {
 
 .sliding-image-desktop {
   display: none;
-  width: 90%; /* Adjust as needed */
-  max-width: 80%; /* Adjust as needed */
+  height: 90%; /* Adjust as needed */
+  max-height: 80%; /* Adjust as needed */
 }
 
 .sliding-image-ph {
@@ -556,7 +556,7 @@ img {
   top: 20px;
   right: 20px;
   border: none;
-  font-size: 30px;
+  font-size: 40px;
   cursor: pointer;
   padding: 10px;
   border-radius: 50%;
@@ -1687,8 +1687,8 @@ img {
 
   .sliding-image-desktop {
     display: none;
-    width: 90%; /* Adjust as needed */
-    max-width: 80%; /* Adjust as needed */
+    height: 90%; /* Adjust as needed */
+    max-height: 80%; /* Adjust as needed */
   }
 
   .sliding-image-ph {
@@ -2808,8 +2808,8 @@ img {
 
   .sliding-image-desktop {
     display: none;
-    width: 90%; /* Adjust as needed */
-    max-width: 80%; /* Adjust as needed */
+    height: 90%; /* Adjust as needed */
+    max-height: 80%; /* Adjust as needed */
   }
 
   .sliding-image-ph {
@@ -3933,8 +3933,8 @@ img {
 
   .sliding-image-desktop {
     display: none;
-    width: 90%; /* Adjust as needed */
-    max-width: 80%; /* Adjust as needed */
+    height: 90%; /* Adjust as needed */
+    max-height: 80%; /* Adjust as needed */
   }
 
   .sliding-image-ph {
@@ -5110,14 +5110,14 @@ img {
 
   .sliding-image-desktop {
     display: flex;
-    width: 90%; /* Adjust as needed */
-    max-width: 80%; /* Adjust as needed */
+    height: 90%; /* Adjust as needed */
+    max-height: 80%; /* Adjust as needed */
   }
 
   .sliding-image-ph {
     display: none;
-    width: 90%; /* Adjust as needed */
-    max-width: 80%; /* Adjust as needed */
+    height: 90%; /* Adjust as needed */
+    max-height: 80%; /* Adjust as needed */
   }
 
   .close-button {
@@ -6344,14 +6344,14 @@ img {
 
   .sliding-image-desktop {
     display: flex;
-    width: 90%; /* Adjust as needed */
-    max-width: 80%; /* Adjust as needed */
+    height: 90%; /* Adjust as needed */
+    max-height: 80%; /* Adjust as needed */
   }
 
   .sliding-image-ph {
     display: none;
-    width: 90%; /* Adjust as needed */
-    max-width: 80%; /* Adjust as needed */
+    height: 90%; /* Adjust as needed */
+    max-height: 80%; /* Adjust as needed */
   }
 
   .close-button {
@@ -7571,14 +7571,14 @@ img {
 
   .sliding-image-desktop {
     display: flex;
-    width: 90%; /* Adjust as needed */
-    max-width: 80%; /* Adjust as needed */
+    height: 90%; /* Adjust as needed */
+    max-height: 80%; /* Adjust as needed */
   }
 
   .sliding-image-ph {
     display: none;
-    width: 90%; /* Adjust as needed */
-    max-width: 80%; /* Adjust as needed */
+    height: 90%; /* Adjust as needed */
+    max-height: 80%; /* Adjust as needed */
   }
 
   .close-button {
