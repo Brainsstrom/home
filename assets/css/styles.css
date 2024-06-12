@@ -497,13 +497,13 @@ img {
 }
 
 #lottie {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-right: 2px; /* Space between the animation and text */
 }
 
 .text-content {
-  font-size: 18px;
+  font-size: 12px;
   margin-top: auto;
   margin-bottom: 0px;
   color: white;
@@ -556,7 +556,7 @@ img {
   top: 20px;
   right: 20px;
   border: none;
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
   padding: 10px;
   border-radius: 50%;
